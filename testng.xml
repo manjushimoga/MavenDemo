@@ -1,0 +1,8 @@
+
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="qsp.DemoA"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
