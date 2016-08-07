@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14191" started-at="2016-08-06T10:36:11Z" finished-at="2016-08-06T10:36:25Z">
+  <suite name="Suite" duration-ms="14965" started-at="2016-08-07T10:38:45Z" finished-at="2016-08-07T10:39:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14191" started-at="2016-08-06T10:36:11Z" finished-at="2016-08-06T10:36:25Z">
+    <test name="TestGC" duration-ms="14508" started-at="2016-08-07T10:38:45Z" finished-at="2016-08-07T10:39:00Z">
       <class name="qsp.DemoA">
-        <test-method status="PASS" signature="testA()[pri:0, instance:qsp.DemoA@3ffc5af1]" name="testA" duration-ms="14151" started-at="2016-08-06T16:06:11Z" finished-at="2016-08-06T16:06:25Z">
+        <test-method status="PASS" signature="testA(org.testng.xml.XmlTest)[pri:0, instance:qsp.DemoA@5442a311]" name="testA" duration-ms="14461" started-at="2016-08-07T16:08:45Z" finished-at="2016-08-07T16:09:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "TestGC" verbose:1[parameters:browser=>chrome][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=qsp.DemoA]  packages:] ]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testA -->
       </class> <!-- qsp.DemoA -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TestGC -->
+    <test name="TestFF" duration-ms="14965" started-at="2016-08-07T10:38:45Z" finished-at="2016-08-07T10:39:00Z">
+      <class name="qsp.DemoA">
+        <test-method status="PASS" signature="testA(org.testng.xml.XmlTest)[pri:0, instance:qsp.DemoA@ae45eb6]" name="testA" duration-ms="14920" started-at="2016-08-07T16:08:45Z" finished-at="2016-08-07T16:09:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "TestFF" verbose:1[parameters:browser=>firefox][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=qsp.DemoA]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+      </class> <!-- qsp.DemoA -->
+    </test> <!-- TestFF -->
+  </suite> <!-- Suite -->
 </testng-results>

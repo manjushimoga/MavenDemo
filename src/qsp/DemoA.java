@@ -1,19 +1,27 @@
 package qsp;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+import org.testng.xml.XmlTest;
 
 public class DemoA {
 	
 	@Test
-	public void testA(){
+	public void testA(XmlTest x) throws MalformedURLException{
+		String browser=x.getParameter("browser");
 		
 //		System.setProperty("webdriver.gecko.driver", "C:\\Manjunatha\\SelRel\\geckodriver.exe");
-		
-		WebDriver driver=new FirefoxDriver();
-		
+		URL remote_addr=new URL("http://10.10.4.166:4444/wd/hub");
+		DesiredCapabilities dc=new DesiredCapabilities();
+		dc.setBrowserName(browser);
+		WebDriver driver=new RemoteWebDriver(remote_addr,dc);
 		driver.get("https://www.google.co.in/");
 		System.out.println(driver.getTitle());
 		
