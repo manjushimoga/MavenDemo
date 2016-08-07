@@ -16,16 +16,17 @@ public class DemoA {
 	@Test
 	public void testA(XmlTest x) throws MalformedURLException{
 		String browser=x.getParameter("browser");
-		
+		String remoteip=x.getParameter("ipaddr");
 //		System.setProperty("webdriver.gecko.driver", "C:\\Manjunatha\\SelRel\\geckodriver.exe");
-		URL remote_addr=new URL("http://10.10.4.166:4444/wd/hub");
+//		URL remote_addr=new URL("http://10.10.4.166:4444/wd/hub");
+		URL remote_addr=new URL(remoteip);
 		DesiredCapabilities dc=new DesiredCapabilities();
 		dc.setBrowserName(browser);
 		WebDriver driver=new RemoteWebDriver(remote_addr,dc);
 		driver.get("https://www.google.co.in/");
 		System.out.println(driver.getTitle());
 		
-//		driver.quit();
+	driver.close();
 	}
 
 }
