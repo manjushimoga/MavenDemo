@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21208" started-at="2016-08-13T09:43:06Z" finished-at="2016-08-13T09:43:27Z">
+  <suite name="Default suite" duration-ms="28147" started-at="2016-08-13T13:02:46Z" finished-at="2016-08-13T13:03:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21208" started-at="2016-08-13T09:43:06Z" finished-at="2016-08-13T09:43:27Z">
+    <test name="Default test" duration-ms="28147" started-at="2016-08-13T13:02:46Z" finished-at="2016-08-13T13:03:14Z">
       <class name="qsp.DemoA">
-        <test-method status="PASS" signature="testA(org.testng.xml.XmlTest)[pri:0, instance:qsp.DemoA@3ffc5af1]" name="testA" duration-ms="21168" started-at="2016-08-13T15:13:06Z" finished-at="2016-08-13T15:13:27Z">
+        <test-method status="PASS" signature="testA(org.testng.xml.XmlTest)[pri:0, instance:qsp.DemoA@80ec1f8]" name="testA" duration-ms="15071" started-at="2016-08-13T18:32:46Z" finished-at="2016-08-13T18:33:01Z">
           <params>
             <param index="0">
               <value>
@@ -18,6 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testA -->
+        <test-method status="PASS" signature="testB(org.testng.xml.XmlTest)[pri:0, instance:qsp.DemoA@80ec1f8]" name="testB" duration-ms="13042" started-at="2016-08-13T18:33:01Z" finished-at="2016-08-13T18:33:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "Default test" verbose:2[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=qsp.DemoA]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
       </class> <!-- qsp.DemoA -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
