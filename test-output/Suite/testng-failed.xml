@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ipaddr" value="http://10.10.4.166:4444/wd/hub"/>
+  <test name="TestFF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="ipaddr" value="http://10.10.4.166:4444/wd/hub"/>
     <classes>
       <class name="qsp.DemoA">
         <methods>
-          <include name="testA"/>
+          <include name="testA" invocation-numbers="0"/>
         </methods>
       </class> <!-- qsp.DemoA -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestFF(failed) -->
 </suite> <!-- Failed suite [Suite] -->
